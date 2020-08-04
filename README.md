@@ -1,2 +1,11 @@
 # Padavan-build说明
-现在不需要新建Release了，已经更改了脚本，直接fork，修改好之后，点击右上角的 Star 星星按钮即可开始自动编译（自己点击才会编译）。
+**16M机型取消以下集成：**  
+ADBYBY #adbyby plus+  
+ALIDDNS #阿里DDNS  
+KOOLPROXY #KP广告过滤  
+CADDY #在线文件管理服务  
+ADGUARDHOME  
+WYY #网易云解锁  
+ZEROTIER #zerotier ~1.3M（K2P-5.0默认不集成）  
+**现有的6款机型，依据chongshengB/rt-n56u配置，均默认集成V2Ray。**  
+**MI-R3G,R2100及RM2100配置未作修改，与chongshengB官方无异。**
