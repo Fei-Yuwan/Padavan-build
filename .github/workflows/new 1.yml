@@ -3,11 +3,6 @@ name: Build Padavan
 on: 
   release:
     types: [published]
-   #push:
-     #tags:
-     #- 'v*'
-  #  branches: 
-  #    - master
    watch:
     types: [started]
 env:
