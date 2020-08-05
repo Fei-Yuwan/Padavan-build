@@ -44,15 +44,6 @@ jobs:
         cd /opt/rt-n56u/toolchain-mipsel
         sh dl_toolchain.sh
         mkdir -p /opt/images/
-    #- name: Apply rainbow themes
-    #  if: env.APPLY_RAINBOWTHEME == 'true'
-    #  run: |
-    #    cp -f RainbowThemes/rainbowthemes.tar.xz $WORK_PATH/trunk/user/www
-    #    cd $WORK_PATH/trunk/user/www
-    #    sudo chmod +x ./rainbowthemes.tar.xz
-    #    mkdir -p n56u_rainbow
-    #    tar -xvf rainbowthemes.tar.xz -C n56u_rainbow
-    #    sed -i "s/WEBUI_NAME=n56u_ribbon_fixed/WEBUI_NAME=n56u_rainbow/g" ./Makefile
     - name: Custom config
       run: |
         #CONFIG_TOOLCHAIN_DIR=$WORK_PATH/toolchain-mipsel
