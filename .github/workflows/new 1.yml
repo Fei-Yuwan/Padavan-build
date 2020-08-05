@@ -1,17 +1,19 @@
+#修改TNAME: K2P-5.0 中的K2P-5.0为你需要编译的型号，注意名称要与configs/templates/目录下的名字相同
 name: Build Padavan
 
 on: 
   release:
     types: [published]
-   push:
-     tags:
-     - 'v*'
+  push:
+    tags:
+    - 'v*'
   #  branches: 
   #    - master
 #  schedule:
- #   - cron: 0 17 * * 4
-   watch:
+#    - cron: 0 8 * * 5
+  watch:
     types: [started]
+
 env:
   REPOSITORY_URL: https://github.com/chongshengB/rt-n56u.git
   #TOOLCHAIN_URL: https://github.com/hanwckf/padavan-toolchain/releases/download/v1.1/mipsel-linux-uclibc.tar.xz
