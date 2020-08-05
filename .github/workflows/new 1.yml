@@ -3,9 +3,9 @@ name: Build Padavan
 on: 
   release:
     types: [published]
-   push:
-     tags:
-     - 'v*'
+   #push:
+     #tags:
+     #- 'v*'
   #  branches: 
   #    - master
 #  schedule:
