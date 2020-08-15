@@ -108,5 +108,5 @@ jobs:
       uses: actions/upload-artifact@master
       if: always()
       with:
-        name: RM2100
+        name: Padavan-packages
         path: /opt/images
