@@ -40,7 +40,7 @@ jobs:
       run: |
         cd /opt/hostedtoolcache/go
         rm -rf /opt/hostedtoolcache/go/1.14.10
-        mv 1.15.3 1.14.10
+        mv 1.15.2 1.14.10
     - name: Build Firmware
       env:
         TNAME: RM2100
