@@ -34,13 +34,9 @@ jobs:
       run: |
         git clone --depth=1 https://github.com/chongshengB/rt-n56u.git /opt/rt-n56u
         cd /opt/rt-n56u/toolchain-mipsel
-        sh dl_toolchain.sh
+        ./clean_toolchain
+        ./build_toolchain
         mkdir -p /opt/images/
-    - name: Set Golang
-      run: |
-        cd /opt/hostedtoolcache/go
-        rm -rf /opt/hostedtoolcache/go/1.14.10
-        mv 1.15.3 1.14.10
     - name: Build Firmware
       env:
         TNAME: RM2100
